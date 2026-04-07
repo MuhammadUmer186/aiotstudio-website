@@ -1,12 +1,17 @@
 export default function SectionHeading(props: {
   title: string;
   subtitle?: string;
+  eyebrow?: string;
+  align?: "left" | "center";
 }) {
+  const centered = props.align === "center";
+
   return (
-    <div className="mb-6">
-      <h1 className="text-3xl md:text-4xl font-semibold">{props.title}</h1>
+    <div className={`mb-8 ${centered ? "text-center" : ""}`}>
+      {props.eyebrow ? <div className="eyebrow">{props.eyebrow}</div> : null}
+      <h2 className="section-title">{props.title}</h2>
       {props.subtitle ? (
-        <p className="mt-2 text-slate-600 max-w-2xl">{props.subtitle}</p>
+        <p className={`section-copy ${centered ? "mx-auto" : ""}`}>{props.subtitle}</p>
       ) : null}
     </div>
   );
