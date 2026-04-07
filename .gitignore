@@ -1,2 +1,14 @@
-.env 
-server/.env 
+.env
+server/.env
+client/.env
+
+client/node_modules/
+client/dist/
+client/tsconfig.tsbuildinfo
+
+server/.venv/
+server/__pycache__/
+server/app.db
+server/*.db
+
+data/

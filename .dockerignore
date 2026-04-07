@@ -1,0 +1,9 @@
+.git
+.gitignore
+README.md
+client/node_modules
+client/dist
+server/.venv
+server/__pycache__
+server/app.db
+data

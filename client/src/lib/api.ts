@@ -1,4 +1,5 @@
-const API_BASE = "https://api.aiotstudio.org";
+const rawApiBase = import.meta.env.VITE_API_BASE?.trim();
+const API_BASE = rawApiBase ? rawApiBase.replace(/\/+$/, "") : "";
 
 export async function apiGet<T>(path: string): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`);
