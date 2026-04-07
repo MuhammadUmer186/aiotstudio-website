@@ -46,3 +46,4 @@ Frontend URL: http://localhost:5173
 - Leads are stored in `server/app.db` (SQLite).
 - AI Demo needs `OPENAI_API_KEY` in `server/.env`.
 "# aiotstudio-website" 
+"# aiotstudio-website" 
