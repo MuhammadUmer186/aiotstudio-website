@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Your Name",
+  name: "Orbionix Technologies",
   role: "IoT, AI, Agentic AI & Robotics Developer",
   email: "you@example.com",
   github: "https://github.com/yourusername",
