@@ -22,6 +22,4 @@ services:
     container_name: iot-ai-frontend
     depends_on:
       - backend
-    ports:
-      - "${FRONTEND_PORT:-3000}:80"
     restart: unless-stopped
